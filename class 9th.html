@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS 9 Subjects</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Fallback background color */
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Overlay for formula background */
+        .formula-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://mathvault.ca/wp-content/uploads/2019/08/Math-Symbols-Signs-Equivalents.jpg');
+            background-size: cover;
+            background-repeat: repeat;
+            opacity: 0.05;
+            z-index: 0;
+        }
+
+        /* Header container */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        /* Page heading */
+        h1 {
+            color: #00ffcc;
+            font-size: 2em;
+            z-index: 1;
+        }
+
+        /* Navigation button styling */
+        .nav-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #333;
+            border: 2px solid #555;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for navigation buttons */
+        .nav-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+        }
+
+        /* Container for subject buttons */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 800px;
+            z-index: 1;
+        }
+
+        /* Subject button styling */
+        .subject-button {
+            color: #fff;
+            padding: 20px;
+            font-size: 1em;
+            text-align: center;
+            border-radius: 12px;
+            text-decoration: none;
+            width: 150px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        /* Neon colors for buttons */
+        .subject-button:nth-child(1) { background-color: #ff00ff; } /* Pink */
+        .subject-button:nth-child(2) { background-color: #00ff00; } /* Green */
+        .subject-button:nth-child(3) { background-color: #00ffff; } /* Cyan */
+        .subject-button:nth-child(4) { background-color: #ff9900; } /* Orange */
+        .subject-button:nth-child(5) { background-color: #ff6699; } /* Light Pink */
+        .subject-button:nth-child(6) { background-color: #0099ff; } /* Blue */
+
+        /* Hover effect for neon glow matching the button color */
+        .subject-button:hover {
+            transform: scale(1.1);
+            box-shadow: 
+                0 0 10px currentColor,
+                0 0 20px currentColor,
+                0 0 30px currentColor,
+                0 0 40px currentColor,
+                0 0 50px currentColor,
+                0 0 60px currentColor;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            .subject-button {
+                width: 120px;
+                height: 100px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Mathematical formula background overlay -->
+    <div class="formula-overlay"></div>
+
+    <!-- Header with navigation buttons -->
+    <div class="header">
+        <a href="#home" class="nav-button" aria-label="Go to Home">Home</a>
+        <h1>CLASS 9</h1>
+        <a href="#2024" class="nav-button" aria-label="Go to Year 2024">2024</a>
+    </div>
+
+    <!-- Subject buttons -->
+    <div class="button-container">
+        <a href="#maths" class="subject-button">गणित</a>
+        <a href="#science" class="subject-button">विज्ञान</a>
+        <a href="#social-studies" class="subject-button">सामाजिक अध्ययन</a>
+        <a href="#hindi" class="subject-button">हिन्दी</a>
+        <a href="#sanskrit" class="subject-button">संस्कृत</a>
+        <a href="#english" class="subject-button">अंग्रेजी</a>
+    </div>
+</body>
+</html>
