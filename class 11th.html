@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS 11 Subjects</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main body styling with formula background */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Overlay for mathematical formulas */
+        .formula-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://mathvault.ca/wp-content/uploads/2019/08/Math-Symbols-Signs-Equivalents.jpg');
+            background-size: cover;
+            background-repeat: repeat;
+            opacity: 0.05;
+            z-index: 0;
+        }
+
+        /* Header container */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        /* Navigation button styling */
+        .nav-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #333;
+            border: 2px solid #555;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for navigation buttons */
+        .nav-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+        }
+
+        /* Page heading */
+        h1 {
+            color: #00ffcc;
+            font-size: 2em;
+            margin: 20px 0;
+            z-index: 1;
+        }
+
+        /* Container for subject buttons */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 1200px;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        /* Subject button styling */
+        .subject-button {
+            color: #fff;
+            padding: 20px;
+            font-size: 1em;
+            text-align: center;
+            border-radius: 12px;
+            text-decoration: none;
+            width: 150px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        /* Unique background colors for each button */
+        .subject-button:nth-child(1) { background-color: #ff4d4d; } /* Red */
+        .subject-button:nth-child(2) { background-color: #4d94ff; } /* Blue */
+        .subject-button:nth-child(3) { background-color: #4dff88; } /* Green */
+        .subject-button:nth-child(4) { background-color: #ffa64d; } /* Orange */
+        .subject-button:nth-child(5) { background-color: #ff4da6; } /* Pink */
+        .subject-button:nth-child(6) { background-color: #b84dff; } /* Purple */
+        .subject-button:nth-child(7) { background-color: #33ccff; } /* Sky Blue */
+        .subject-button:nth-child(8) { background-color: #ffcc33; } /* Yellow */
+        .subject-button:nth-child(9) { background-color: #33ff99; } /* Lime Green */
+        .subject-button:nth-child(10) { background-color: #ff6633; } /* Deep Orange */
+        .subject-button:nth-child(11) { background-color: #ff33ff; } /* Magenta */
+        .subject-button:nth-child(12) { background-color: #9966ff; } /* Lavender */
+        .subject-button:nth-child(13) { background-color: #66ffcc; } /* Mint Green */
+        .subject-button:nth-child(14) { background-color: #ff9966; } /* Peach */
+        .subject-button:nth-child(15) { background-color: #cc33ff; } /* Violet */
+        .subject-button:nth-child(16) { background-color: #66cc66; } /* Light Green */
+        .subject-button:nth-child(17) { background-color: #ff6666; } /* Salmon */
+        .subject-button:nth-child(18) { background-color: #33ffcc; } /* Cyan */
+        .subject-button:nth-child(19) { background-color: #ccff66; } /* Lemon Yellow */
+        .subject-button:nth-child(20) { background-color: #ff3399; } /* Bright Pink */
+
+        /* Hover effect for neon glow */
+        .subject-button:hover {
+            transform: scale(1.1);
+            box-shadow: 
+                0 0 10px currentColor,
+                0 0 20px currentColor,
+                0 0 30px currentColor,
+                0 0 40px currentColor,
+                0 0 50px currentColor;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            .subject-button {
+                width: 120px;
+                height: 100px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Mathematical formula background overlay -->
+    <div class="formula-overlay"></div>
+
+    <!-- Header with Home and 2024 buttons -->
+    <div class="header">
+        <a href="#home" class="nav-button" aria-label="Go to Home">Home</a>
+        <h1>CLASS 11</h1>
+        <a href="#2024" class="nav-button" aria-label="Go to Year 2024">2024</a>
+    </div>
+
+    <!-- Subject buttons -->
+    <div class="button-container">
+        <a href="#accounts" class="subject-button">लेखाशास्त्र</a>
+        <a href="#chemistry" class="subject-button">रसायन विज्ञान</a>
+        <a href="#maths" class="subject-button">गणित</a>
+        <a href="#biology" class="subject-button">जीव विज्ञान</a>
+        <a href="#psychology" class="subject-button">मनोविज्ञान</a>
+        <a href="#geography" class="subject-button">भूगोल</a>
+        <a href="#physics" class="subject-button">भौतिक विज्ञान</a>
+        <a href="#hindi" class="subject-button">हिन्दी</a>
+        <a href="#sociology" class="subject-button">समाजशास्त्र</a>
+        <a href="#politics" class="subject-button">राजनीति विज्ञान</a>
+        <a href="#history" class="subject-button">इतिहास</a>
+        <a href="#economics" class="subject-button">अर्थशास्त्र</a>
+        <a href="#business-studies" class="subject-button">बिजनेस स्टडीज</a>
+        <a href="#sanskrit" class="subject-button">संस्कृत</a>
+        <a href="#english" class="subject-button">अंग्रेजी</a>
+        <a href="#graphic-design" class="subject-button">ग्राफिक्स डिजाइन</a>
+        <a href="#art" class="subject-button">कला</a>
+        <a href="#home-science" class="subject-button">गृह विज्ञान</a>
+        <a href="#creative-writing" class="subject-button">रचनात्मक लेखन</a>
+        <a href="#music" class="subject-button">संगीत</a>
+    </div>
+</body>
+</html>
