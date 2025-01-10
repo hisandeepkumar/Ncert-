@@ -25,4 +25,4 @@ function createMatrixLine() {
 }
 
 // Reduced density by increasing the interval
-setInterval(createMatrixLine, 10000); // Every 200ms instead of 50ms
+setInterval(createMatrixLine, 1500); // Every 200ms instead of 50ms
