@@ -12,7 +12,7 @@
             box-sizing: border-box;
         }
 
-       /* Main body styling */
+        /* Main body styling */
         body {
             font-family: Arial, sans-serif;
             background-color: #000;
@@ -40,29 +40,21 @@
             opacity: 0.05;
             z-index: 0;
         }
-
-        /* Header styling */
+   /* Header container */
         .header {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             width: 100%;
+            max-width: 1200px;
             padding: 20px;
-            gap: 20px;
             z-index: 1;
         }
 
-        .header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            text-align: center;
-            color: #00ffcc;
-            flex-grow: 1;
-        }
-
+        /* Navigation button styling */
         .nav-button {
             padding: 10px 20px;
-            font-size: 1rem;
+            font-size: 1em;
             color: #fff;
             background-color: #333;
             border: 2px solid #555;
@@ -71,20 +63,30 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
+        /* Hover effect for navigation buttons */
         .nav-button:hover {
             transform: scale(1.1);
             box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
         }
 
-   
+        /* Page heading */
+        h1 {
+            color: #00ffcc;
+            font-size: 2em;
+            margin: 20px 0;
+            z-index: 1;
+        }
 
+    
         /* Button container styling */
         .button-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             gap: 15px;
             z-index: 1;
+        
         }
+
 
         /* Subject button styling */
         .subject-button {
