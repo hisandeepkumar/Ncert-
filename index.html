@@ -126,73 +126,29 @@
             transform: scale(1.1); /* Enlarge button */
             box-shadow: 0 0 15px 5px currentColor, 0 0 30px 10px currentColor;
         }
-
-        /* Responsive design for small screens */
+ /* Responsive design */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2.2em;
+            .header h1 {
+                font-size: 1.8rem;
             }
 
-            .button-container {
-                gap: 10px;
-                max-width: 800px;
-            }
-
-            .class-button {
-                width: 120px;
-                height: 120px;
-                font-size: 1.1em;
-                padding: 15px;
-            }
-        }
-
-        /* Tablet and Mobile specific changes */
-        @media (max-width: 600px) {
-            body {
-                padding: 5px;
-            }
-
-            h1 {
-                font-size: 1.6em;
-                margin-bottom: 15px;
-            }
-
-            .button-container {
-                gap: 10px;
-                max-width: 100%;
-                padding: 10px;
-            }
-
-            .class-button {
-                width: 90px;
-                height: 90px;
+            .subject-button {
+                height: 80px;
                 font-size: 0.9em;
-                padding: 10px;
             }
         }
 
-        /* Larger screen optimization (for desktops and windows devices) */
-        @media (min-width: 1024px) {
-            body {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 2.8em; /* Larger title for desktops */
-            }
-
+        @media (max-width: 480px) {
             .button-container {
-                gap: 20px;
-                max-width: 1000px;
+                grid-template-columns: repeat(3, 1fr);
             }
 
-            .class-button {
-                width: 150px; /* Larger buttons for large screens */
-                height: 150px;
-                font-size: 1.3em;
-                padding: 25px;
+            .subject-button {
+                height: 70px;
+                font-size: 0.8em;
             }
         }
+       
     </style>
     <link rel="stylesheet" href="subject-box.css">
     <link rel="stylesheet" href="matrix-effect.css">
