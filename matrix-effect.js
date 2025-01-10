@@ -17,11 +17,11 @@ function createMatrixLine() {
             : mathSymbols.charAt(Math.floor(Math.random() * mathSymbols.length));
         const randomColor = neonColors[Math.floor(Math.random() * neonColors.length)];
         line.innerHTML = `<span style="color: ${randomColor}; text-shadow: 0 0 10px ${randomColor}, 0 0 20px ${randomColor};">${randomChar}</span>`;
-    }, 10); // Slower character change
+    }, 200); // Slower character change
 
     setTimeout(() => {
         matrixRainContainer.removeChild(line);
-    }, parseFloat(line.style.animationDuration) * 100);
+    }, parseFloat(line.style.animationDuration) * 1000);
 }
 
 // Reduced density by increasing the interval
