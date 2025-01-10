@@ -23,4 +23,4 @@ function createMatrixLine() {
     }, parseFloat(line.style.animationDuration) * 1000);
 }
 
-setInterval(createMatrixLine, 25);
+setInterval(createMatrixLine, 5);
