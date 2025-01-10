@@ -15,17 +15,19 @@
         /* Main body styling */
         body {
             font-family: Arial, sans-serif;
-            background-color: #000; /* Fallback background color */
+            background-color: #000;
             color: #fff;
             display: flex;
-            align-items: center;
-            justify-content: center;
             flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
             min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
             position: relative;
         }
 
-        /* Overlay for formula background */
+        /* Overlay for mathematical formulas */
         .formula-overlay {
             position: absolute;
             top: 0;
@@ -39,28 +41,28 @@
             z-index: 0;
         }
 
-        /* Header container */
+        /* Header styling */
         .header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             width: 100%;
-            max-width: 1200px;
             padding: 20px;
+            gap: 20px;
             z-index: 1;
         }
 
-        /* Page heading */
-        h1 {
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-align: center;
             color: #00ffcc;
-            font-size: 2em;
-            z-index: 1;
+            flex-grow: 1;
         }
 
-        /* Navigation button styling */
         .nav-button {
             padding: 10px 20px;
-            font-size: 1em;
+            font-size: 1rem;
             color: #fff;
             background-color: #333;
             border: 2px solid #555;
@@ -69,19 +71,18 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Hover effect for navigation buttons */
         .nav-button:hover {
             transform: scale(1.1);
             box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
         }
 
-        /* Container for subject buttons */
+   
+
+        /* Button container styling */
         .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            max-width: 800px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
             z-index: 1;
         }
 
@@ -93,8 +94,8 @@
             text-align: center;
             border-radius: 12px;
             text-decoration: none;
-            width: 150px;
-            height: 120px;
+            width: 100%;
+            height: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
