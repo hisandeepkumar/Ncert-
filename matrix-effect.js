@@ -11,7 +11,9 @@ function createMatrixLine() {
 
     // Slower animation duration
     line.style.animationDuration = Math.random() * 4 + 6 + 's'; // 6s to 10s duration
-    setInterval(() => {
+
+    // Character change logic
+    const charChangeInterval = setInterval(() => {
         const randomChar = Math.random() < 0.7
             ? characters.charAt(Math.floor(Math.random() * characters.length))
             : mathSymbols.charAt(Math.floor(Math.random() * mathSymbols.length));
@@ -19,10 +21,12 @@ function createMatrixLine() {
         line.innerHTML = `<span style="color: ${randomColor}; text-shadow: 0 0 10px ${randomColor}, 0 0 20px ${randomColor};">${randomChar}</span>`;
     }, 200); // Slower character change
 
+    // Remove the line after animation duration ends
     setTimeout(() => {
-        matrixRainContainer.removeChild(line);
+        clearInterval(charChangeInterval); // Stop changing characters
+        matrixRainContainer.removeChild(line); // Remove the line from the container
     }, parseFloat(line.style.animationDuration) * 1000);
 }
 
-// Reduced density by increasing the interval
-setInterval(createMatrixLine, 500); // Every 200ms instead of 50ms
+// Reduce line density by adjusting the interval
+setInterval(createMatrixLine, 500); // Every 500ms instead of 200ms to avoid overflow
