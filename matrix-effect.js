@@ -24,7 +24,3 @@ function createMatrixLine() {
 }
 
 setInterval(createMatrixLine, 50);
-  // Continuous matrix effect
-        setInterval(createMatrixSymbol, 1000);
-
-
