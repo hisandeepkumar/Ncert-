@@ -23,6 +23,7 @@
             flex-direction: column;
             min-height: 100vh;
             position: relative;
+            padding: 20px;
         }
 
         /* Overlay for formula background */
@@ -46,21 +47,21 @@
             justify-content: space-between;
             width: 100%;
             max-width: 1200px;
-            padding: 20px;
+            padding: 10px 20px;
             z-index: 1;
         }
 
         /* Page heading */
         h1 {
             color: #00ffcc;
-            font-size: 2em;
+            font-size: 1.8em;
             z-index: 1;
         }
 
         /* Navigation button styling */
         .nav-button {
-            padding: 10px 20px;
-            font-size: 1em;
+            padding: 8px 16px;
+            font-size: 0.9em;
             color: #fff;
             background-color: #333;
             border: 2px solid #555;
@@ -79,7 +80,7 @@
         .button-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 15px;
             justify-content: center;
             max-width: 800px;
             z-index: 1;
@@ -88,13 +89,13 @@
         /* Subject button styling */
         .subject-button {
             color: #fff;
-            padding: 20px;
-            font-size: 1em;
+            padding: 15px;
+            font-size: 0.9em;
             text-align: center;
             border-radius: 12px;
             text-decoration: none;
-            width: 150px;
-            height: 120px;
+            width: 130px;
+            height: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -123,16 +124,47 @@
         }
 
         /* Responsive design for smaller screens */
-        @media (max-width: 600px) {
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .nav-button {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+
             .subject-button {
                 width: 120px;
                 height: 100px;
-                font-size: 0.9em;
+                font-size: 0.8em;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .button-container {
+                gap: 10px;
+            }
+
+            h1 {
+                font-size: 1.3em;
+            }
+
+            .subject-button {
+                width: 100px;
+                height: 80px;
+                font-size: 0.7em;
             }
         }
     </style>
-      <link rel="stylesheet" href="subject-box.css">
-      <link rel="stylesheet" href="matrix-effect.css">
+    <link rel="stylesheet" href="subject-box.css">
+    <link rel="stylesheet" href="matrix-effect.css">
 </head>
 <body>
     <!-- Mathematical formula background overlay -->
@@ -146,16 +178,17 @@
     </div>
     <!-- Subject box with soft animated border -->
     <div class="subject-box">
-    <!-- Subject buttons -->
-    <div class="button-container">
-        <a href="#maths" class="subject-button">गणित</a>
-        <a href="#science" class="subject-button">विज्ञान</a>
-        <a href="#social-studies" class="subject-button">सामाजिक अध्ययन</a>
-        <a href="#hindi" class="subject-button">हिन्दी</a>
-        <a href="#sanskrit" class="subject-button">संस्कृत</a>
-        <a href="#english" class="subject-button">अंग्रेजी</a>
+        <!-- Subject buttons -->
+        <div class="button-container">
+            <a href="#maths" class="subject-button">गणित</a>
+            <a href="#science" class="subject-button">विज्ञान</a>
+            <a href="#social-studies" class="subject-button">सामाजिक अध्ययन</a>
+            <a href="#hindi" class="subject-button">हिन्दी</a>
+            <a href="#sanskrit" class="subject-button">संस्कृत</a>
+            <a href="#english" class="subject-button">अंग्रेजी</a>
+        </div>
     </div>
-              <div id="matrixRain"></div>
+    <div id="matrixRain"></div>
     <script src="matrix-effect.js"></script>
 </body>
 </html>
