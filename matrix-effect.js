@@ -20,7 +20,7 @@ function createMatrixLine() {
 
     setTimeout(() => {
         matrixRainContainer.removeChild(line);
-    }, parseFloat(line.style.animationDuration) * 100);
+    }, parseFloat(line.style.animationDuration) * 1000);
 }
 
 setInterval(createMatrixLine, 50);
