@@ -14,7 +14,7 @@
             box-sizing: border-box;
         }
 
-      /* Main body styling */
+        /* Main body styling */
         body {
             font-family: Arial, sans-serif;
             background-color: #000;
@@ -42,7 +42,8 @@
             opacity: 0.05;
             z-index: 0;
         }
-   /* Header container */
+
+        /* Header container */
         .header {
             display: flex;
             align-items: center;
@@ -53,11 +54,6 @@
             z-index: 1;
         }
 
-        /* Navigation button styling */
-     
-
-        /* Hover effect for navigation buttons */
-       
         /* Page heading */
         h1 {
             color: #00ffcc;
@@ -66,20 +62,16 @@
             z-index: 1;
         }
 
-    
         /* Button container styling */
         .button-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             gap: 15px;
             z-index: 1;
-        
         }
 
-
-
-        /* Subject button styling */
-        .subject-button {
+        /* Class button styling */
+        .class-button {
             color: #fff;
             padding: 20px;
             font-size: 1em;
@@ -94,6 +86,7 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: 2px solid transparent;
         }
+
         /* Neon colors for each button */
         .class-button:nth-child(1) { background-color: #ff00ff; border-color: #ff00ff; } /* Pink */
         .class-button:nth-child(2) { background-color: #00ff00; border-color: #00ff00; } /* Green */
@@ -108,7 +101,7 @@
         .class-button:nth-child(11) { background-color: #99ff33; border-color: #99ff33; } /* Lime */
         .class-button:nth-child(12) { background-color: #cc00ff; border-color: #cc00ff; } /* Violet */
 
-           /* Neon glow effect */
+        /* Neon glow effect */
         .class-button:hover {
             transform: scale(1.1);
             box-shadow: 
@@ -119,13 +112,14 @@
                 0 0 50px currentColor,
                 0 0 60px currentColor;
         }
+
         /* Responsive design */
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 1.8rem;
             }
 
-            .subject-button {
+            .class-button {
                 height: 80px;
                 font-size: 0.9em;
             }
@@ -136,7 +130,7 @@
                 grid-template-columns: repeat(3, 1fr);
             }
 
-            .subject-button {
+            .class-button {
                 height: 70px;
                 font-size: 0.8em;
             }
@@ -151,6 +145,7 @@
 
     <!-- Page content -->
     <h1>NCERT e-Books</h1>
+
     <!-- Subject box with soft animated border -->
     <div class="subject-box">
         <div class="button-container">
@@ -168,7 +163,9 @@
             <a href="class12th.html" class="class-button">Class 12</a>
         </div>
     </div>
+
     <div id="matrixRain"></div>
+
     <script src="matrix-effect.js"></script>
 </body>
 </html>
