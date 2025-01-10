@@ -9,7 +9,7 @@ function createMatrixLine() {
     line.style.left = Math.random() * window.innerWidth + 'px';
     matrixRainContainer.appendChild(line);
 
-    line.style.animationDuration = Math.random() * 4 + 6 + 's';
+    line.style.animationDuration = Math.random() * 3 + 3 + 's';
     setInterval(() => {
         const randomChar = Math.random() < 0.7
             ? characters.charAt(Math.floor(Math.random() * characters.length))
