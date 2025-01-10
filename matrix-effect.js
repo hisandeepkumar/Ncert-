@@ -6,7 +6,10 @@ const neonColors = ['#ff00ff', '#33ff99', '#00ff00', '#00ffff', '#ff9900', '#ff0
 function createMatrixLine() {
     const line = document.createElement('div');
     line.classList.add('matrix-line');
+
+    // Randomize the starting position (horizontal and vertical)
     line.style.left = Math.random() * window.innerWidth + 'px';
+    line.style.top = Math.random() * window.innerHeight + 'px';
     matrixRainContainer.appendChild(line);
 
     // Slower animation duration
