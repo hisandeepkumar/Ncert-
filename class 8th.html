@@ -122,15 +122,29 @@
                 0 0 50px currentColor,
                 0 0 60px currentColor;
         }
+ /* Responsive design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
 
-        /* Responsive design for smaller screens */
-        @media (max-width: 600px) {
             .subject-button {
-                width: 120px;
-                height: 100px;
+                height: 80px;
                 font-size: 0.9em;
             }
         }
+
+        @media (max-width: 480px) {
+            .button-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .subject-button {
+                height: 70px;
+                font-size: 0.8em;
+            }
+        }
+       
     </style>
        <link rel="stylesheet" href="subject-box.css">
     <link rel="stylesheet" href="matrix-effect.css">
