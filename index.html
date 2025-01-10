@@ -121,10 +121,16 @@
         .class-button:nth-child(11) { background-color: #99ff33; border-color: #99ff33; } /* Lime */
         .class-button:nth-child(12) { background-color: #cc00ff; border-color: #cc00ff; } /* Violet */
 
-        /* Hover effect for neon glow */
+           /* Neon glow effect */
         .class-button:hover {
-            transform: scale(1.1); /* Enlarge button */
-            box-shadow: 0 0 15px 5px currentColor, 0 0 30px 10px currentColor;
+            transform: scale(1.1);
+            box-shadow: 
+                0 0 10px currentColor,
+                0 0 20px currentColor,
+                0 0 30px currentColor,
+                0 0 40px currentColor,
+                0 0 50px currentColor,
+                0 0 60px currentColor;
         }
  /* Responsive design */
         @media (max-width: 768px) {
