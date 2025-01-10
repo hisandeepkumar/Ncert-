@@ -74,7 +74,41 @@
             transform: scale(1.1);
             box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
         }
+ /* Subject box container with soft animated border */
+        .subject-box {
+            margin: 20px 0;
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+            border-radius: 15px;
+            position: relative;
+            animation: neon-border-animation 5s linear infinite;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2),
+                        0 0 30px rgba(255, 255, 255, 0.3),
+                        0 0 40px rgba(255, 255, 255, 0.4),
+                        0 0 50px rgba(255, 255, 255, 0.5);
+        }
 
+        @keyframes neon-border-animation {
+            0% {
+                box-shadow: 0 0 20px rgba(255, 0, 0, 0.6),
+                            0 0 30px rgba(255, 255, 0, 0.6),
+                            0 0 40px rgba(0, 255, 0, 0.6),
+                            0 0 50px rgba(0, 255, 255, 0.6);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(0, 0, 255, 0.6),
+                            0 0 30px rgba(255, 0, 255, 0.6),
+                            0 0 40px rgba(255, 255, 0, 0.6),
+                            0 0 50px rgba(0, 255, 0, 0.6);
+            }
+            100% {
+                box-shadow: 0 0 20px rgba(255, 0, 0, 0.6),
+                            0 0 30px rgba(255, 255, 0, 0.6),
+                            0 0 40px rgba(0, 255, 0, 0.6),
+                            0 0 50px rgba(0, 255, 255, 0.6);
+            }
+        }
         /* Container for subject buttons */
         .button-container {
             display: flex;
