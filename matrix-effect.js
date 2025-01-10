@@ -20,7 +20,9 @@ function createMatrixLine() {
 
     setTimeout(() => {
         matrixRainContainer.removeChild(line);
-    }, parseFloat(line.style.animationDuration) * 10000);
+    }, parseFloat(line.style.animationDuration) * 100);
 }
 
 setInterval(createMatrixLine, 50);
+  // Continuous matrix effect
+        setInterval(createMatrixSymbol, 1000);
