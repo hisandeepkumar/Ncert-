@@ -1,0 +1,31 @@
+#matrixRain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.matrix-line {
+    position: absolute;
+    top: -100px;
+    width: 1px;
+    height: 100%;
+    font-family: monospace;
+    font-size: 20px;
+    opacity: 0;
+    animation: rain 5s infinite linear;
+}
+
+@keyframes rain {
+    0% {
+        top: -100px;
+        opacity: 0.5;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
