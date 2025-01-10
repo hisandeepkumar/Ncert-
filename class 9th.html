@@ -12,21 +12,22 @@
             box-sizing: border-box;
         }
 
-        /* Main body styling */
+       /* Main body styling */
         body {
             font-family: Arial, sans-serif;
-            background-color: #000; /* Fallback background color */
+            background-color: #000;
             color: #fff;
             display: flex;
-            align-items: center;
-            justify-content: center;
             flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
             min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
             position: relative;
-            padding: 20px;
         }
 
-        /* Overlay for formula background */
+        /* Overlay for mathematical formulas */
         .formula-overlay {
             position: absolute;
             top: 0;
@@ -39,7 +40,8 @@
             opacity: 0.05;
             z-index: 0;
         }
-   /* Header styling */
+
+        /* Header styling */
         .header {
             display: flex;
             align-items: center;
