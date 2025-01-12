@@ -154,7 +154,7 @@
     border-radius: 30px;
     animation: pulse 1.5s infinite;
     transition: transform 0.3s;
-    z-index: 10; /* Ensure it is above other elements */
+    z-index: 0; /* Ensure it is above other elements */
     position: relative; /* Relative positioning for z-index to work */
 }
 .instagram-button:hover {
