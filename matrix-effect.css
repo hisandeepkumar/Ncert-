@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -0;
+    z-index: -1;  /* Keep it behind other content */
     pointer-events: none;
     overflow: hidden;  /* Prevent the page from growing */
 }
@@ -34,7 +34,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    overflow: hidden;  /* Prevent page size increase */
-    width: 100%;       /* Ensures viewport is fully utilized */
+    height: 100%;  /* Ensure the body takes up full height */
+    width: 100%;   /* Ensures viewport is fully utilized */
+    overflow: auto; /* Allow scrolling */
 }
