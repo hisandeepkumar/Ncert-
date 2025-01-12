@@ -16,18 +16,18 @@
     height: 100px;  /* Keep fixed height */
     font-family: monospace;
     font-size: 30px;
-    opacity: 100;
+    opacity: 0;
     animation: rain 5s infinite linear;
 }
 
 @keyframes rain {
     0% {
         top: -100px;
-        opacity: 0;
+        opacity: 100;
     }
     100% {
         top: 100%;  /* Ensures lines move out of view without affecting page size */
-        opacity: 0;
+        opacity: 100;
     }
 }
 
