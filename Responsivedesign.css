@@ -140,10 +140,13 @@
                 0 0 50px currentColor,
                 0 0 60px currentColor;
         }
-/* instagram button */
+/* Instagram button */
+.instagram-button-container {
+    text-align: center; /* Center the button horizontally */
+    margin: 40px auto; /* Add spacing between the button and other elements */
+}
 
-  .instagram-button {
-    margin-top: 30px;
+.instagram-button {
     display: inline-block;
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
     color: #fff;
@@ -154,12 +157,14 @@
     border-radius: 30px;
     animation: pulse 1.5s infinite;
     transition: transform 0.3s;
-    z-index: 0; /* Ensure it is above other elements */
-    position: relative; /* Relative positioning for z-index to work */
+    position: relative;
+    z-index: 0;
 }
+
 .instagram-button:hover {
     transform: scale(1.1);
 }
+
 @keyframes pulse {
     0% {
         box-shadow: 0 0 10px rgba(255, 0, 150, 0.6);
