@@ -29,4 +29,4 @@ function createMatrixLine() {
 }
 
 // Reduce line density by adjusting the interval
-setInterval(createMatrixLine, 200); // Every 500ms instead of 200ms to avoid overflow
+setInterval(createMatrixLine, 400); // Every 500ms instead of 200ms to avoid overflow
