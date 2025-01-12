@@ -16,7 +16,7 @@
     height: 100px;  /* Keep fixed height */
     font-family: monospace;
     font-size: 30px;
-    opacity: 0;
+    opacity: 1;
     animation: rain 5s infinite linear;
 }
 
