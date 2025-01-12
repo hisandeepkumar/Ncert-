@@ -140,33 +140,36 @@
                 0 0 60px currentColor;
         }
 /* instagram button */
- .instagram-button {
-            margin-top: 30px;
-            display: inline-block;
-            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-            color: #fff;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 30px;
-            animation: pulse 1.5s infinite;
-            transition: transform 0.3s;
-        }
-        .instagram-button:hover {
-            transform: scale(1.1);
-        }
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 10px rgba(255, 0, 150, 0.6);
-            }
-            50% {
-                box-shadow: 0 0 20px rgba(255, 0, 150, 0.8);
-            }
-            100% {
-                box-shadow: 0 0 10px rgba(255, 0, 150, 0.6);
-            }
-        }
+
+  .instagram-button {
+    margin-top: 30px;
+    display: inline-block;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    animation: pulse 1.5s infinite;
+    transition: transform 0.3s;
+    z-index: 10; /* Ensure it is above other elements */
+    position: relative; /* Relative positioning for z-index to work */
+}
+.instagram-button:hover {
+    transform: scale(1.1);
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 0, 150, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 0, 150, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 0, 150, 0.6);
+    }
+}
 /* Responsive design */
         @media (max-width: 768px) {
             .header h1 {
