@@ -1,6 +1,6 @@
  /* Subject box container with soft animated border */
         .subject-box {
-            margin: 20px 0;
+            margin: 20px auto;
             padding: 20px;
             width: 90%;
             max-width: 1200px;
