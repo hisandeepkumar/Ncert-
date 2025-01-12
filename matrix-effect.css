@@ -23,7 +23,7 @@
 @keyframes rain {
     0% {
         top: -100px;
-        opacity: 0.5;
+        opacity: 0;
     }
     100% {
         top: 100%;  /* Ensures lines move out of view without affecting page size */
