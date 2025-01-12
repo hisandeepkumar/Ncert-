@@ -23,11 +23,11 @@
 @keyframes rain {
     0% {
         top: -100px;
-        opacity: 100;
+        opacity: 1;  /* Set full visibility */
     }
     100% {
         top: 100%;  /* Ensures lines move out of view without affecting page size */
-        opacity: 100;
+        opacity: 0;  /* Fade out at the end */
     }
 }
 
