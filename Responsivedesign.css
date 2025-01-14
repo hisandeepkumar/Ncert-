@@ -128,6 +128,14 @@
         .subject-button:nth-child(25) { background-color: #66ff66; } /* Light Green */
         .subject-button:nth-child(26) { background-color: #0099ff; } /* Blue */
         .subject-button:nth-child(27) { background-color: #ffcc00; } /* Yellow */
+        .subject-button:nth-child(28) { background-color: #ff00ff; } /* Pink */
+        .subject-button:nth-child(29) { background-color: #33ff99; } /* Light Green */
+        .subject-button:nth-child(30) { background-color: #00ff00; } /* Green */
+        .subject-button:nth-child(31) { background-color: #00ffff; } /* Cyan */
+        .subject-button:nth-child(32) { background-color: #ff9900; } /* Orange */
+        .subject-button:nth-child(33) { background-color: #ff0000; } /* Red */
+        .subject-button:nth-child(34) { background-color: #66ff66; } /* Light Green */
+        .subject-button:nth-child(35) { background-color: #0099ff; } /* Blue */
 
         /* Neon glow effect */
         .subject-button:hover {
