@@ -62,15 +62,13 @@ JavaScript - Matrix Rain Effect
 
 🔗 Live Demo
 
-<p align="center">
-    <a href="https://hisandeepkumar.github.io/Ncert-/" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 18px; font-weight: bold; color: white; background-color: #008CBA; text-decoration: none; border-radius: 5px;">🚀 Visit Live Demo</a>
-</p>📢 Connect with Me
+## 🔗 Live Demo  
+[![Live Demo](https://img.shields.io/badge/🚀-Visit_Live_Demo-blue?style=for-the-badge)](https://hisandeepkumar.github.io/Ncert-/)  
 
-<p align="center">
-    <a href="https://www.instagram.com/sandeep_yadav_._._" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 18px; font-weight: bold; color: white; background-color: #E4405F; text-decoration: none; border-radius: 5px;">📸 Follow Me on Instagram</a>
-</p>
+## 📢 Connect with Me  
+[![Instagram](https://img.shields.io/badge/📸-Follow_Me_on_Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/sandeep_yadav_._._/)
 ---
 
-This version includes a centered button for the Live Demo and an Instagram button for social media. Let me know if you want any design modifications!
+
 
 
