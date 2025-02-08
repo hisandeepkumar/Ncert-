@@ -2,6 +2,7 @@
 NCERT  E-BOOKS
 NCERT eBooks Website
 
+---
 📖 About the Project
 
 The NCERT eBooks Website provides free and fast access to all NCERT books from Class 1 to 12. It is designed to simplify learning without any distractions such as ads. The website features a clean UI, a matrix rain effect, and a soft animated border around the subject selection box for an engaging experience.
@@ -61,18 +62,15 @@ JavaScript - Matrix Rain Effect
 
 🔗 Live Demo
 
-[Coming Soon]
+<p align="center">
+    <a href="https://hisandeepkumar.github.io/Ncert/" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 18px; font-weight: bold; color: white; background-color: #008CBA; text-decoration: none; border-radius: 5px;">🚀 Visit Live Demo</a>
+</p>📢 Connect with Me
 
-🎉 Contributions
-
-This is a personal project aimed at helping students. If you'd like to contribute or suggest improvements, feel free to connect!
-
-📢 Connect with Me
-
-🔗 Instagram: @sandeep_yadav_..
-
-
+<p align="center">
+    <a href="https://www.instagram.com/sandeep_yadav_._._" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 18px; font-weight: bold; color: white; background-color: #E4405F; text-decoration: none; border-radius: 5px;">📸 Follow Me on Instagram</a>
+</p>
 ---
 
-This README file clearly presents the purpose, features, and structure of the project. Let me know if you need any changes!
+This version includes a centered button for the Live Demo and an Instagram button for social media. Let me know if you want any design modifications!
+
 
