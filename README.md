@@ -63,7 +63,7 @@ JavaScript - Matrix Rain Effect
 🔗 Live Demo
 
 <p align="center">
-    <a href="https://hisandeepkumar.github.io/Ncert/" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 18px; font-weight: bold; color: white; background-color: #008CBA; text-decoration: none; border-radius: 5px;">🚀 Visit Live Demo</a>
+    <a href="https://hisandeepkumar.github.io/Ncert-/" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 18px; font-weight: bold; color: white; background-color: #008CBA; text-decoration: none; border-radius: 5px;">🚀 Visit Live Demo</a>
 </p>📢 Connect with Me
 
 <p align="center">
