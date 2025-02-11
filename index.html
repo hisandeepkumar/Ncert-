@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="manifest" href="./manifest.json">
     <title>NCERT eBooks</title>
-  
+
+     <script>
+      
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./service-worker.js", { scope: "./" })
+      .then((reg) => console.log("Service Worker Registered!", reg))
+      .catch((err) => console.log("Service Worker Registration Failed!", err));
+  }
+
+    </script>
     <style>
        
     </style>
