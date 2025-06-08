@@ -1,3 +1,4 @@
+/* Glowing animated border only (with mask to show only border)
 .subject-box {
   margin: 20px auto;
   padding: 20px;
@@ -10,30 +11,18 @@
   background: rgb(0, 0, 0);
 }
 
-
-/* Shared Glowing Animation */
-@keyframes borderGlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Common box style for both content and subject-box */
-
+/* Subject box container with animated glowing border only */
 .subject-box {
   margin: 20px auto;
   padding: 20px;
   width: 90%;
   max-width: 1200px;
-  border-radius: 40px;
+  border-radius: 15px;
   position: relative;
   z-index: 1;
-  overflow: hidden;
-  background: #000;
 }
 
-/* Outer animated glowing layer for both */
-
+/* Outer glow effect */
 .subject-box::before {
   content: '';
   position: absolute;
@@ -41,7 +30,7 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  border-radius: 42px;
+  border-radius: 17px;
   background: linear-gradient(130deg, #ff0057, #ff7a00, #00ffe1, #ff00f2, #ff0057);
   background-size: 400%;
   animation: borderGlow 6s linear infinite;
@@ -49,8 +38,7 @@
   filter: blur(5px);
 }
 
-/* Inner mask layer for both */
-
+/* Glowing animated border only (with mask to show only border) */
 .subject-box::after {
   content: '';
   position: absolute;
@@ -58,7 +46,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 40px;
+  border-radius: 15px;
   padding: 1px;
   background: linear-gradient(130deg, #ff0057, #ff7a00, #00ffe1, #ff00f2, #ff0057);
   background-size: 400%;
@@ -67,4 +55,11 @@
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
+  pointer-events: none;
+}
+
+@keyframes borderGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
