@@ -1,70 +1,70 @@
-.content {
- 
-  
-  
-  
+.subject-box {
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
   border-radius: 40px;
+  position: relative;
+  z-index: 1;
   overflow: hidden;
   background: rgb(0, 0, 0);
-
-
-   margin: 20px auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 1200px;
-    
-    position: relative;
-    z-index: 1;
 }
 
-/* Subject box container with soft animated border */
-.subject-box {
-    margin: 20px auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 1200px;
-    border-radius: 15px;
-    position: relative;
-    z-index: 2;
-}
 
-/* Outer animated glowing layer */
-.subject-box::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border-radius: 17px;
-    background: linear-gradient(130deg, #ff0057, #ff7a00, #00ffe1, #ff00f2, #ff0057);
-    background-size: 400%;
-    animation: borderGlow 6s linear infinite;
-    z-index: -1;
-    filter: blur(5px);
-}
-
-/* Inner animated mask glowing layer */
-.subject-box::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 15px;
-    padding: 1px;
-    background: linear-gradient(130deg, #ff0057, #ff7a00, #00ffe1, #ff00f2, #ff0057);
-    background-size: 400%;
-    animation: borderGlow 6s linear infinite;
-    z-index: 1;
-    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-}
-
+/* Shared Glowing Animation */
 @keyframes borderGlow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Common box style for both content and subject-box */
+
+.subject-box {
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 40px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: #000;
+}
+
+/* Outer animated glowing layer for both */
+
+.subject-box::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 42px;
+  background: linear-gradient(130deg, #ff0057, #ff7a00, #00ffe1, #ff00f2, #ff0057);
+  background-size: 400%;
+  animation: borderGlow 6s linear infinite;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+/* Inner mask layer for both */
+
+.subject-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 40px;
+  padding: 1px;
+  background: linear-gradient(130deg, #ff0057, #ff7a00, #00ffe1, #ff00f2, #ff0057);
+  background-size: 400%;
+  animation: borderGlow 6s linear infinite;
+  z-index: 1;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
