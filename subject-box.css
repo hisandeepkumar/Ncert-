@@ -1,17 +1,3 @@
-/* Glowing animated border only (with mask to show only border)*/
-.content {
-  margin: 20px auto;
-  padding: 20px;
-  width: 90%;
-  max-width: 1200px;
-  border-radius: 40px;
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-  background: rgb(0, 0, 0);
-}
-
-/* Subject box container with animated glowing border only */
 .subject-box {
   margin: 20px auto;
   padding: 20px;
@@ -19,47 +5,18 @@
   max-width: 1200px;
   border-radius: 15px;
   position: relative;
-  z-index: 1;
+  animation: neon-border-animation 5s linear infinite;
+  box-shadow: 0 0 20px #ff0057, 0 0 30px #ff7a00, 0 0 40px #00ffe1, 0 0 50px #ff00f2;
 }
 
-/* Outer glow effect */
-.subject-box::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border-radius: 17px;
-  background: linear-gradient(130deg, #ff0057, #ff7a00, #00ffe1, #ff00f2, #ff0057);
-  background-size: 400%;
-  animation: borderGlow 6s linear infinite;
-  z-index: -1;
-  filter: blur(5px);
-}
-
-/* Glowing animated border only (with mask to show only border) */
-.subject-box::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 15px;
-  padding: 1px;
-  background: linear-gradient(130deg, #ff0057, #ff7a00, #00ffe1, #ff00f2, #ff0057);
-  background-size: 400%;
-  animation: borderGlow 6s linear infinite;
-  z-index: 1;
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
-}
-
-@keyframes borderGlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes neon-border-animation {
+  0% {
+    box-shadow: 0 0 20px #ff0057, 0 0 30px #ff7a00, 0 0 40px #00ffe1, 0 0 50px #ff00f2;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff7a00, 0 0 30px #00ffe1, 0 0 40px #ff00f2, 0 0 50px #ff0057;
+  }
+  100% {
+    box-shadow: 0 0 20px #ff0057, 0 0 30px #ff7a00, 0 0 40px #00ffe1, 0 0 50px #ff00f2;
+  }
 }
