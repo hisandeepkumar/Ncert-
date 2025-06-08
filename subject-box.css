@@ -1,35 +1,51 @@
- /* Subject box container with soft animated border */
-        .subject-box {
-            margin: 20px auto;
-            padding: 20px;
-            width: 90%;
-            max-width: 1200px;
-            border-radius: 15px;
-            position: relative;
-            animation: neon-border-animation 5s linear infinite;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2),
-                        0 0 30px rgba(255, 255, 255, 0.3),
-                        0 0 40px rgba(255, 255, 255, 0.4),
-                        0 0 50px rgba(255, 255, 255, 0.5);
-        }
+/* Subject box container with soft animated border */
+.subject-box {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
 
-        @keyframes neon-border-animation {
-            0% {
-                box-shadow: 0 0 20px rgba(255, 0, 0, 0.6),
-                            0 0 30px rgba(255, 255, 0, 0.6),
-                            0 0 40px rgba(0, 255, 0, 0.6),
-                            0 0 50px rgba(0, 255, 255, 0.6);
-            }
-            50% {
-                box-shadow: 0 0 20px rgba(0, 0, 255, 0.6),
-                            0 0 30px rgba(255, 0, 255, 0.6),
-                            0 0 40px rgba(255, 255, 0, 0.6),
-                            0 0 50px rgba(0, 255, 0, 0.6);
-            }
-            100% {
-                box-shadow: 0 0 20px rgba(255, 0, 0, 0.6),
-                            0 0 30px rgba(255, 255, 0, 0.6),
-                            0 0 40px rgba(0, 255, 0, 0.6),
-                            0 0 50px rgba(0, 255, 255, 0.6);
-            }
-        }
+/* Outer animated glowing layer */
+.subject-box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 17px;
+    background: linear-gradient(130deg, #ff0057, #ff7a00, #00ffe1, #ff00f2, #ff0057);
+    background-size: 400%;
+    animation: borderGlow 6s linear infinite;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+/* Inner animated mask glowing layer */
+.subject-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: 1px;
+    background: linear-gradient(130deg, #ff0057, #ff7a00, #00ffe1, #ff00f2, #ff0057);
+    background-size: 400%;
+    animation: borderGlow 6s linear infinite;
+    z-index: 1;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+@keyframes borderGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
